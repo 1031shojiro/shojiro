@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webページ変更通知ツール</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Shojiro Monitor</p>
+          <h1>ウェブページの変更を通知して履歴を可視化</h1>
+          <p class="subtitle">
+            監視URLを登録すると、変更の有無や差分が一目でわかるシンプルなダッシュボードを作成できます。
+          </p>
+        </div>
+        <div class="status-card">
+          <div>
+            <p class="label">自動チェック間隔</p>
+            <div class="inline">
+              <input id="interval" type="number" value="30" min="5" />
+              <span>秒</span>
+              <button id="toggle-auto" class="secondary">自動チェック開始</button>
+            </div>
+          </div>
+          <p class="hint">この画面を開いたままにすると定期的にチェックされます。</p>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="card">
+          <h2>監視対象を追加</h2>
+          <form id="add-form" class="add-form">
+            <input
+              id="url-input"
+              type="url"
+              placeholder="https://example.com"
+              required
+            />
+            <button type="submit">追加</button>
+          </form>
+          <p class="helper">※ サーバー側で定期取得して差分を作成します。</p>
+        </section>
+
+        <section class="grid">
+          <div class="card">
+            <div class="section-title">
+              <h2>監視リスト</h2>
+              <button id="refresh-all" class="secondary">すべてチェック</button>
+            </div>
+            <div id="targets" class="targets"></div>
+          </div>
+
+          <div class="card">
+            <div class="section-title">
+              <h2>変更履歴</h2>
+              <select id="history-target" class="select"></select>
+            </div>
+            <div id="history" class="history"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <template id="target-template">
+      <div class="target">
+        <div>
+          <p class="target-url"></p>
+          <p class="target-meta"></p>
+        </div>
+        <div class="target-actions">
+          <button class="secondary check">今すぐ確認</button>
+        </div>
+      </div>
+    </template>
+
+    <template id="history-template">
+      <div class="history-entry">
+        <div class="history-meta"></div>
+        <pre class="history-diff"></pre>
+      </div>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
