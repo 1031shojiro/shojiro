@@ -1,0 +1,10 @@
+{
+  "name": "shojiro",
+  "version": "0.1.0",
+  "description": "Web page change tracker tool",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}
