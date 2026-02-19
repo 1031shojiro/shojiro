@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ワイヤーフレーム — サービス | BizSite WP</title>
+  <link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+
+  <!-- ワイヤーフレームナビ -->
+  <nav class="wf-nav">
+    <div class="wf-nav-inner">
+      <span class="wf-nav-label">WF Pages</span>
+      <a href="index.html">トップ</a>
+      <a href="about.html">会社概要</a>
+      <a href="services.html" class="current">サービス</a>
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <!-- ヘッダー -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="logo-block">
+            <div class="logo-mark">LOGO</div>
+            <span class="logo-text">株式会社〇〇</span>
+          </div>
+          <nav class="site-nav">
+            <a href="index.html"    class="nav-item">ホーム</a>
+            <a href="about.html"    class="nav-item">会社概要</a>
+            <a href="services.html" class="nav-item active">サービス</a>
+            <a href="#"             class="nav-item">実績・事例</a>
+            <a href="#"             class="nav-item">ニュース</a>
+            <a href="contact.html"  class="nav-cta">お問い合わせ</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- ブレッドクラム -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb-list">
+          <li><a href="index.html">ホーム</a></li>
+          <li class="sep">›</li>
+          <li>サービス</li>
+        </ol>
+      </div>
+    </div>
+
+
+    <!-- ========================================
+         ページヒーロー
+         ======================================== -->
+    <section style="background: #e8e8e8; padding: 64px 0; border-bottom: 2px solid #ccc;">
+      <div class="container">
+        <span class="section-label">Services</span>
+        <h1 class="section-title" style="font-size: 36px;">サービス一覧</h1>
+        <p style="font-size: 15px; color: #666; line-height: 1.8; max-width: 620px;">
+          お客様の事業フェーズや課題に応じた、最適なソリューションをご提供します。
+          まずはお気軽にご相談ください。
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         サービス一覧（タブ切り替え想定）
+         ======================================== -->
+    <section style="background: #fff;">
+      <div class="container">
+
+        <!-- タブUI -->
+        <div style="display: flex; border-bottom: 2px solid #ddd; margin-bottom: 48px; gap: 0;">
+          <button style="padding: 12px 32px; background: #222; color: #fff; border: none; border-bottom: 2px solid #222; font-size: 13px; font-weight: bold; cursor: pointer;">サービス A</button>
+          <button style="padding: 12px 32px; background: none; color: #888; border: none; font-size: 13px; cursor: pointer;">サービス B</button>
+          <button style="padding: 12px 32px; background: none; color: #888; border: none; font-size: 13px; cursor: pointer;">サービス C</button>
+        </div>
+
+        <!-- サービスA 詳細 -->
+        <div class="grid-2" style="align-items: center; gap: 60px; margin-bottom: 64px;">
+
+          <div>
+            <div class="card-icon" style="width:56px; height:56px; margin-bottom: 20px;">[ アイコン ]</div>
+            <span class="section-label">Service A</span>
+            <h2 class="section-title">サービス名 A</h2>
+            <p style="font-size: 14px; color: #666; line-height: 1.9; margin-bottom: 24px;">
+              このサービスの詳細説明が入ります。対象ユーザー、提供価値、導入背景など
+              を3〜5段落程度で記述します。お客様のどんな課題を解決するか、
+              導入後にどんな変化が生まれるかを明確に伝えます。
+            </p>
+
+            <ul class="feature-list" style="margin-bottom: 28px;">
+              <li>機能・特徴 01：具体的なメリットをここに記述</li>
+              <li>機能・特徴 02：具体的なメリットをここに記述</li>
+              <li>機能・特徴 03：具体的なメリットをここに記述</li>
+              <li>機能・特徴 04：具体的なメリットをここに記述</li>
+            </ul>
+
+            <div style="display: flex; gap: 12px;">
+              <a href="contact.html" class="btn btn-primary">このサービスを相談する</a>
+              <a href="#"            class="btn btn-secondary">資料をダウンロード</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="placeholder img" style="height: 360px; margin-bottom: 16px;">
+              [ サービスイメージ画像 ]<br>推奨: 600×360px
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 機能詳細（3カラム） -->
+        <div style="border-top: 1px solid #ddd; padding-top: 48px;">
+          <h3 style="font-size: 20px; font-weight: bold; color: #222; margin-bottom: 32px; text-align: center;">主な機能・特徴</h3>
+          <div class="grid-3">
+            <div class="card">
+              <div class="card-icon">[ アイコン ]</div>
+              <h4 class="card-title">機能カテゴリ 1</h4>
+              <p class="card-text">この機能がもたらす価値・解決できる課題を2〜3文で記述します。</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">[ アイコン ]</div>
+              <h4 class="card-title">機能カテゴリ 2</h4>
+              <p class="card-text">この機能がもたらす価値・解決できる課題を2〜3文で記述します。</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">[ アイコン ]</div>
+              <h4 class="card-title">機能カテゴリ 3</h4>
+              <p class="card-text">この機能がもたらす価値・解決できる課題を2〜3文で記述します。</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         導入フロー
+         ======================================== -->
+    <section style="background: #f5f5f5;">
+      <div class="container">
+
+        <div class="section-header center">
+          <span class="section-label">Flow</span>
+          <h2 class="section-title">導入の流れ</h2>
+          <p class="section-subtitle">最短〇〇日で稼働開始。スムーズな導入を全力サポートします。</p>
+        </div>
+
+        <!-- 横並びステップ -->
+        <div style="display: flex; align-items: flex-start; gap: 0; position: relative;">
+
+          <div style="flex: 1; text-align: center; position: relative; z-index: 1;">
+            <div style="width: 56px; height: 56px; background: #222; color: #fff; border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: bold; margin: 0 auto 16px;">1</div>
+            <h4 style="font-size: 14px; font-weight: bold; color: #222; margin-bottom: 8px;">お問い合わせ</h4>
+            <p style="font-size: 12px; color: #777; line-height: 1.7;">フォームまたはお電話でまずはご連絡ください。</p>
+          </div>
+
+          <div style="flex: 0 0 24px; display: flex; align-items: center; justify-content: center; padding-top: 16px; color: #ccc; font-size: 20px;">→</div>
+
+          <div style="flex: 1; text-align: center; position: relative; z-index: 1;">
+            <div style="width: 56px; height: 56px; background: #444; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: bold; margin: 0 auto 16px;">2</div>
+            <h4 style="font-size: 14px; font-weight: bold; color: #222; margin-bottom: 8px;">ヒアリング・提案</h4>
+            <p style="font-size: 12px; color: #777; line-height: 1.7;">課題をお伺いし、最適なプランをご提案します。</p>
+          </div>
+
+          <div style="flex: 0 0 24px; display: flex; align-items: center; justify-content: center; padding-top: 16px; color: #ccc; font-size: 20px;">→</div>
+
+          <div style="flex: 1; text-align: center; position: relative; z-index: 1;">
+            <div style="width: 56px; height: 56px; background: #555; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: bold; margin: 0 auto 16px;">3</div>
+            <h4 style="font-size: 14px; font-weight: bold; color: #222; margin-bottom: 8px;">契約・セットアップ</h4>
+            <p style="font-size: 12px; color: #777; line-height: 1.7;">ご契約後、専任チームが環境設定を行います。</p>
+          </div>
+
+          <div style="flex: 0 0 24px; display: flex; align-items: center; justify-content: center; padding-top: 16px; color: #ccc; font-size: 20px;">→</div>
+
+          <div style="flex: 1; text-align: center; position: relative; z-index: 1;">
+            <div style="width: 56px; height: 56px; background: #666; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: bold; margin: 0 auto 16px;">4</div>
+            <h4 style="font-size: 14px; font-weight: bold; color: #222; margin-bottom: 8px;">研修・トレーニング</h4>
+            <p style="font-size: 12px; color: #777; line-height: 1.7;">担当者向けのオンボーディングを実施します。</p>
+          </div>
+
+          <div style="flex: 0 0 24px; display: flex; align-items: center; justify-content: center; padding-top: 16px; color: #ccc; font-size: 20px;">→</div>
+
+          <div style="flex: 1; text-align: center; position: relative; z-index: 1;">
+            <div style="width: 56px; height: 56px; background: #888; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: bold; margin: 0 auto 16px;">5</div>
+            <h4 style="font-size: 14px; font-weight: bold; color: #222; margin-bottom: 8px;">稼働・継続支援</h4>
+            <p style="font-size: 12px; color: #777; line-height: 1.7;">24/7サポートで運用を安心してお任せください。</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         料金プラン
+         ======================================== -->
+    <section style="background: #fff;">
+      <div class="container">
+
+        <div class="section-header center">
+          <span class="section-label">Pricing</span>
+          <h2 class="section-title">料金プラン</h2>
+          <p class="section-subtitle">
+            スタートアップから大企業まで、規模に合わせたプランをご用意しています。
+          </p>
+        </div>
+
+        <div class="grid-3" style="align-items: start;">
+
+          <!-- スタータープラン -->
+          <div class="pricing-card">
+            <div class="pricing-plan">Starter</div>
+            <div class="pricing-price">¥〇〇,000</div>
+            <div class="pricing-period">/ 月（税別）</div>
+            <ul class="pricing-features">
+              <li>機能 A</li>
+              <li>機能 B</li>
+              <li>ユーザー数: 〇名まで</li>
+              <li>サポート: メールのみ</li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary w-full" style="text-align: center; display: block;">このプランで始める</a>
+          </div>
+
+          <!-- スタンダードプラン（おすすめ） -->
+          <div class="pricing-card featured" style="position: relative;">
+            <div class="pricing-badge">おすすめ</div>
+            <div class="pricing-plan">Standard</div>
+            <div class="pricing-price">¥〇〇〇,000</div>
+            <div class="pricing-period">/ 月（税別）</div>
+            <ul class="pricing-features">
+              <li>スタータープランの全機能</li>
+              <li>機能 C / 機能 D</li>
+              <li>ユーザー数: 〇〇名まで</li>
+              <li>サポート: メール + チャット</li>
+              <li>月次レポート</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary w-full" style="text-align: center; display: block;">このプランで始める</a>
+          </div>
+
+          <!-- エンタープライズ -->
+          <div class="pricing-card">
+            <div class="pricing-plan">Enterprise</div>
+            <div class="pricing-price" style="font-size: 26px; margin-bottom: 0;">お見積もり</div>
+            <div class="pricing-period">要件に応じたカスタム料金</div>
+            <ul class="pricing-features">
+              <li>スタンダードプランの全機能</li>
+              <li>専任サポートマネージャー</li>
+              <li>ユーザー数: 無制限</li>
+              <li>SLA 保証（99.99% uptime）</li>
+              <li>カスタム開発対応</li>
+              <li>オンサイト研修</li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary w-full" style="text-align: center; display: block;">お見積もりを依頼する</a>
+          </div>
+
+        </div>
+
+        <p style="text-align: center; font-size: 12px; color: #999; margin-top: 24px;">
+          ※ 記載の金額は税別です。詳細はお問い合わせください。年払いの場合、〇ヶ月分お得になります。
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         よくある質問（FAQ）
+         ======================================== -->
+    <section style="background: #f5f5f5;">
+      <div class="container">
+
+        <div class="section-header center">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">よくある質問</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+
+          <div style="background: #fff; border: 1px solid #ddd; margin-bottom: 8px;">
+            <div style="padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 14px; font-weight: bold; color: #222;">
+              <span>Q. 無料トライアルはありますか？</span>
+              <span style="color: #aaa; font-size: 18px;">+</span>
+            </div>
+            <div style="padding: 0 24px 18px; font-size: 13px; color: #666; line-height: 1.8; border-top: 1px solid #eee; margin-top: 0;">
+              はい、〇〇日間の無料トライアルをご用意しています。クレジットカードの登録不要でお試しいただけます。
+            </div>
+          </div>
+
+          <div style="background: #fff; border: 1px solid #ddd; margin-bottom: 8px;">
+            <div style="padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 14px; font-weight: bold; color: #222;">
+              <span>Q. 既存のシステムとの連携は可能ですか？</span>
+              <span style="color: #aaa; font-size: 18px;">+</span>
+            </div>
+            <div style="padding: 0 24px 18px; font-size: 13px; color: #666; line-height: 1.8; border-top: 1px solid #eee;">
+              REST API / Webhookによる連携に対応しています。主要なCRM・ERPシステムとの連携実績もございます。詳細はお問い合わせください。
+            </div>
+          </div>
+
+          <div style="background: #fff; border: 1px solid #ddd; margin-bottom: 8px;">
+            <div style="padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 14px; font-weight: bold; color: #222;">
+              <span>Q. セキュリティ対策について教えてください。</span>
+              <span style="color: #aaa; font-size: 18px;">+</span>
+            </div>
+            <div style="padding: 0 24px 18px; font-size: 13px; color: #666; line-height: 1.8; border-top: 1px solid #eee;">
+              ISO 27001認証を取得しており、データは国内データセンターで管理しています。通信はすべてTLS 1.3で暗号化されます。
+            </div>
+          </div>
+
+          <div style="background: #fff; border: 1px solid #ddd;">
+            <div style="padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 14px; font-weight: bold; color: #222;">
+              <span>Q. 解約・プラン変更はいつでも可能ですか？</span>
+              <span style="color: #aaa; font-size: 18px;">+</span>
+            </div>
+            <div style="padding: 0 24px 18px; font-size: 13px; color: #666; line-height: 1.8; border-top: 1px solid #eee;">
+              月払いプランはいつでも解約・変更が可能です。年払いプランの中途解約については別途ご相談ください。
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 32px;">
+          <a href="#" style="font-size: 13px; color: #555; text-decoration: underline;">すべての FAQ を見る →</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CTAセクション -->
+    <section class="cta-section">
+      <div class="container text-center">
+        <span class="section-label" style="color: #888; border-color: #555;">Get Started</span>
+        <h2 class="section-title" style="color: #fff; margin-bottom: 12px;">まずは無料でお試しください</h2>
+        <p class="section-subtitle" style="color: #aaa; margin: 0 auto 32px;">
+          〇〇日間のトライアルで、実際の効果をご体験ください。
+        </p>
+        <div style="display: flex; justify-content: center; gap: 16px;">
+          <a href="contact.html" class="btn btn-white">無料トライアルを申し込む</a>
+          <a href="contact.html" class="btn btn-outline-white">資料をダウンロードする</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- フッター -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-grid">
+            <div>
+              <div class="logo-block" style="margin-bottom: 16px;">
+                <div class="logo-mark">LOGO</div>
+                <span class="logo-text">株式会社〇〇</span>
+              </div>
+              <p class="footer-desc">〇〇業界向けの専門的なソリューションを提供する企業です。</p>
+            </div>
+            <div>
+              <h4 class="footer-col-title">サービス</h4>
+              <ul class="footer-links">
+                <li><a href="#">サービス A</a></li>
+                <li><a href="#">サービス B</a></li>
+                <li><a href="#">サービス C</a></li>
+                <li><a href="#">料金プラン</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="footer-col-title">会社情報</h4>
+              <ul class="footer-links">
+                <li><a href="about.html">会社概要</a></li>
+                <li><a href="#">採用情報</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="footer-col-title">お役立ち情報</h4>
+              <ul class="footer-links">
+                <li><a href="#">よくある質問</a></li>
+                <li><a href="#">資料ダウンロード</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; 2025 株式会社〇〇 All Rights Reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">利用規約</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /.page-wrapper -->
+</body>
+</html>

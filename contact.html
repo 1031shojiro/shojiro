@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ワイヤーフレーム — お問い合わせ | BizSite WP</title>
+  <link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+
+  <!-- ワイヤーフレームナビ -->
+  <nav class="wf-nav">
+    <div class="wf-nav-inner">
+      <span class="wf-nav-label">WF Pages</span>
+      <a href="index.html">トップ</a>
+      <a href="about.html">会社概要</a>
+      <a href="services.html">サービス</a>
+      <a href="contact.html" class="current">お問い合わせ</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <!-- ヘッダー -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="logo-block">
+            <div class="logo-mark">LOGO</div>
+            <span class="logo-text">株式会社〇〇</span>
+          </div>
+          <nav class="site-nav">
+            <a href="index.html"    class="nav-item">ホーム</a>
+            <a href="about.html"    class="nav-item">会社概要</a>
+            <a href="services.html" class="nav-item">サービス</a>
+            <a href="#"             class="nav-item">実績・事例</a>
+            <a href="#"             class="nav-item">ニュース</a>
+            <a href="contact.html"  class="nav-cta" style="background: #555;">お問い合わせ</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- ブレッドクラム -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb-list">
+          <li><a href="index.html">ホーム</a></li>
+          <li class="sep">›</li>
+          <li>お問い合わせ</li>
+        </ol>
+      </div>
+    </div>
+
+
+    <!-- ========================================
+         ページヒーロー
+         ======================================== -->
+    <section style="background: #e8e8e8; padding: 64px 0; border-bottom: 2px solid #ccc;">
+      <div class="container">
+        <span class="section-label">Contact</span>
+        <h1 class="section-title" style="font-size: 36px;">お問い合わせ</h1>
+        <p style="font-size: 15px; color: #666; line-height: 1.8; max-width: 600px;">
+          ご質問・ご相談・お見積もりなど、お気軽にお問い合わせください。
+          担当者より〇〇営業日以内にご連絡いたします。
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         お問い合わせ方法（3カラム）
+         ======================================== -->
+    <section style="background: #fff; padding: 40px 0; border-bottom: 1px solid #ddd;">
+      <div class="container">
+        <div class="grid-3" style="gap: 0;">
+
+          <div style="text-align: center; padding: 20px 32px; border-right: 1px solid #ddd;">
+            <div class="card-icon" style="margin: 0 auto 12px; width: 52px; height: 52px;">[ フォームアイコン ]</div>
+            <h3 style="font-size: 15px; font-weight: bold; color: #222; margin-bottom: 8px;">フォームから</h3>
+            <p style="font-size: 12px; color: #888; line-height: 1.7;">24時間受付。〇〇営業日以内にご返信いたします。</p>
+          </div>
+
+          <div style="text-align: center; padding: 20px 32px; border-right: 1px solid #ddd;">
+            <div class="card-icon" style="margin: 0 auto 12px; width: 52px; height: 52px;">[ 電話アイコン ]</div>
+            <h3 style="font-size: 15px; font-weight: bold; color: #222; margin-bottom: 8px;">お電話で</h3>
+            <p style="font-size: 18px; font-weight: bold; color: #222; margin-bottom: 4px;">0120-000-000</p>
+            <p style="font-size: 11px; color: #999;">受付時間：平日 9:00 〜 18:00</p>
+          </div>
+
+          <div style="text-align: center; padding: 20px 32px;">
+            <div class="card-icon" style="margin: 0 auto 12px; width: 52px; height: 52px;">[ チャットアイコン ]</div>
+            <h3 style="font-size: 15px; font-weight: bold; color: #222; margin-bottom: 8px;">チャットで</h3>
+            <p style="font-size: 12px; color: #888; line-height: 1.7;">右下のチャットボタンからリアルタイムでご相談いただけます。</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         メインコンテンツ（フォーム + 情報）
+         ======================================== -->
+    <section style="background: #f5f5f5;">
+      <div class="container">
+
+        <div class="grid-2" style="align-items: flex-start; gap: 48px;">
+
+          <!-- 問い合わせフォーム -->
+          <div style="background: #fff; border: 1px solid #ddd; padding: 40px;">
+
+            <h2 style="font-size: 20px; font-weight: bold; color: #222; margin-bottom: 8px;">お問い合わせフォーム</h2>
+            <p style="font-size: 12px; color: #999; margin-bottom: 28px;">
+              <span style="color: #cc4444;">*</span> は必須項目です
+            </p>
+
+            <form>
+
+              <!-- お問い合わせ種別 -->
+              <div class="form-group">
+                <label class="form-label">
+                  お問い合わせ種別 <span style="color: #cc4444;">*</span>
+                </label>
+                <select class="form-control">
+                  <option>選択してください</option>
+                  <option>サービスへのご質問</option>
+                  <option>資料請求</option>
+                  <option>無料トライアルのお申し込み</option>
+                  <option>お見積もり依頼</option>
+                  <option>パートナーシップについて</option>
+                  <option>その他</option>
+                </select>
+              </div>
+
+              <!-- 会社名 -->
+              <div class="form-group">
+                <label class="form-label">
+                  会社名 <span style="color: #cc4444;">*</span>
+                </label>
+                <input type="text" class="form-control" placeholder="株式会社〇〇">
+              </div>
+
+              <!-- 部署名・役職 -->
+              <div class="grid-2" style="gap: 16px;">
+                <div class="form-group">
+                  <label class="form-label">部署名</label>
+                  <input type="text" class="form-control" placeholder="営業部">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">役職</label>
+                  <input type="text" class="form-control" placeholder="部長">
+                </div>
+              </div>
+
+              <!-- お名前 -->
+              <div class="grid-2" style="gap: 16px;">
+                <div class="form-group">
+                  <label class="form-label">
+                    姓 <span style="color: #cc4444;">*</span>
+                  </label>
+                  <input type="text" class="form-control" placeholder="山田">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">
+                    名 <span style="color: #cc4444;">*</span>
+                  </label>
+                  <input type="text" class="form-control" placeholder="太郎">
+                </div>
+              </div>
+
+              <!-- メールアドレス -->
+              <div class="form-group">
+                <label class="form-label">
+                  メールアドレス <span style="color: #cc4444;">*</span>
+                </label>
+                <input type="email" class="form-control" placeholder="taro.yamada@example.co.jp">
+              </div>
+
+              <!-- 電話番号 -->
+              <div class="form-group">
+                <label class="form-label">電話番号</label>
+                <input type="tel" class="form-control" placeholder="03-0000-0000">
+              </div>
+
+              <!-- 従業員規模 -->
+              <div class="form-group">
+                <label class="form-label">従業員規模</label>
+                <select class="form-control">
+                  <option>選択してください</option>
+                  <option>1〜10名</option>
+                  <option>11〜50名</option>
+                  <option>51〜300名</option>
+                  <option>301〜1,000名</option>
+                  <option>1,001名以上</option>
+                </select>
+              </div>
+
+              <!-- お問い合わせ内容 -->
+              <div class="form-group">
+                <label class="form-label">
+                  お問い合わせ内容 <span style="color: #cc4444;">*</span>
+                </label>
+                <textarea class="form-control" placeholder="ご質問・ご要望などをご記入ください。"></textarea>
+              </div>
+
+              <!-- プライバシーポリシー同意 -->
+              <div class="form-group" style="margin-bottom: 28px;">
+                <label style="display: flex; gap: 10px; align-items: flex-start; cursor: pointer;">
+                  <input type="checkbox" style="margin-top: 2px; flex-shrink: 0;">
+                  <span style="font-size: 12px; color: #666; line-height: 1.6;">
+                    <a href="#" style="color: #333; text-decoration: underline;">プライバシーポリシー</a>に同意する
+                    <span style="color: #cc4444;"> *</span>
+                  </span>
+                </label>
+              </div>
+
+              <!-- 送信ボタン -->
+              <button type="submit" class="btn btn-primary w-full" style="text-align: center; border: none; cursor: pointer; padding: 16px; font-size: 14px;">
+                送信する
+              </button>
+
+            </form>
+
+          </div>
+
+          <!-- 会社情報・アクセス -->
+          <div>
+
+            <h2 style="font-size: 20px; font-weight: bold; color: #222; margin-bottom: 28px;">会社・アクセス情報</h2>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">[ 住所 ]</div>
+              <div>
+                <div class="contact-info-label">所在地</div>
+                <div class="contact-info-value">〒100-0001<br>東京都〇〇区〇〇 1-2-3 〇〇ビル〇〇階</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">[ 電話 ]</div>
+              <div>
+                <div class="contact-info-label">電話番号</div>
+                <div class="contact-info-value">0120-000-000</div>
+                <div style="font-size: 11px; color: #aaa; margin-top: 2px;">平日 9:00〜18:00（土日祝を除く）</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">[ メール ]</div>
+              <div>
+                <div class="contact-info-label">メールアドレス</div>
+                <div class="contact-info-value">info@example.co.jp</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item" style="border-bottom: none;">
+              <div class="contact-icon">[ 時計 ]</div>
+              <div>
+                <div class="contact-info-label">営業時間</div>
+                <div class="contact-info-value">平日 9:00 〜 18:00</div>
+                <div style="font-size: 11px; color: #aaa; margin-top: 2px;">土・日・祝日・年末年始を除く</div>
+              </div>
+            </div>
+
+            <!-- 地図プレースホルダー -->
+            <div class="map-placeholder" style="margin-top: 8px;">
+              [ Google マップ 埋め込み ]<br>
+              アクセスマップ / 〇〇駅 徒歩〇分
+            </div>
+
+            <!-- アクセス情報 -->
+            <div style="background: #fff; border: 1px solid #ddd; padding: 20px; margin-top: 16px;">
+              <h4 style="font-size: 13px; font-weight: bold; color: #222; margin-bottom: 12px;">交通アクセス</h4>
+              <ul style="list-style: none; font-size: 12px; color: #666; line-height: 1.9;">
+                <li>・〇〇線「〇〇駅」A出口より徒歩〇分</li>
+                <li>・〇〇線「〇〇駅」〇番出口より徒歩〇分</li>
+                <li>・お車の場合：〇〇ICより〇分（専用駐車場なし）</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         送信完了ページ（別状態の表示例）
+         ======================================== -->
+    <section style="background: #fff; border-top: 2px dashed #ddd;">
+      <div class="container text-center" style="max-width: 600px; margin: 0 auto;">
+
+        <div style="background: #f9f9f9; border: 2px dashed #ccc; padding: 48px; text-align: center;">
+          <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #aaa; margin-bottom: 16px;">
+            ※ 参考: 送信完了後の表示状態（ThankYouページ）
+          </p>
+          <div style="width: 60px; height: 60px; background: #ddd; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #999; margin: 0 auto 20px;">[ ✓ ]</div>
+          <h3 style="font-size: 22px; font-weight: bold; color: #222; margin-bottom: 12px;">
+            お問い合わせありがとうございました
+          </h3>
+          <p style="font-size: 14px; color: #666; line-height: 1.8; margin-bottom: 28px;">
+            内容を確認の上、〇〇営業日以内にご連絡いたします。<br>
+            しばらくお待ちください。
+          </p>
+          <a href="index.html" class="btn btn-secondary">トップページへ戻る</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- フッター -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-grid">
+            <div>
+              <div class="logo-block" style="margin-bottom: 16px;">
+                <div class="logo-mark">LOGO</div>
+                <span class="logo-text">株式会社〇〇</span>
+              </div>
+              <p class="footer-desc">〇〇業界向けの専門的なソリューションを提供する企業です。</p>
+            </div>
+            <div>
+              <h4 class="footer-col-title">サービス</h4>
+              <ul class="footer-links">
+                <li><a href="#">サービス A</a></li>
+                <li><a href="#">サービス B</a></li>
+                <li><a href="#">サービス C</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="footer-col-title">会社情報</h4>
+              <ul class="footer-links">
+                <li><a href="about.html">会社概要</a></li>
+                <li><a href="#">採用情報</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="footer-col-title">お役立ち情報</h4>
+              <ul class="footer-links">
+                <li><a href="#">よくある質問</a></li>
+                <li><a href="#">資料ダウンロード</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; 2025 株式会社〇〇 All Rights Reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">利用規約</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /.page-wrapper -->
+</body>
+</html>
